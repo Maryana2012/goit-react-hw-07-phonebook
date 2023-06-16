@@ -9,7 +9,7 @@ import { fetchContacts } from "redux/operations";
 
 export default function PhoneBook() {
   const dispatch = useDispatch();
-  const {contact, isLoading, error}=useSelector(contactsSelector);
+  const {isLoading, error}=useSelector(contactsSelector);
 
   useEffect(()=>{
     dispatch(fetchContacts())
