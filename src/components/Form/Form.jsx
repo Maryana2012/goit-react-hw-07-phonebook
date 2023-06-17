@@ -27,8 +27,11 @@ export default function Form() {
     if (contact.some(element => element.name.toLowerCase() === form.elements.name.value.toLowerCase())) {
       alert(`is already in contacts`)
    } else {
-
-     dispatch(addContact(form.elements.name.value, form.elements.phone.value));
+     const newUser = {
+        name: form.elements.name.value, 
+        hone: form.elements.phone.value
+     }
+     dispatch(addContact(newUser));
     
    }
    form.reset();
