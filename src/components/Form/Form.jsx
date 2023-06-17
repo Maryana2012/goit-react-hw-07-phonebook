@@ -29,13 +29,12 @@ export default function Form() {
    } else {
      const newUser = {
         name: form.elements.name.value, 
-        hone: form.elements.phone.value
+        phone: form.elements.phone.value
      }
-     dispatch(addContact(newUser));
+      dispatch(addContact(newUser));
     
    }
    form.reset();
-    
   }
   
   return (<form className={css.form__container}
