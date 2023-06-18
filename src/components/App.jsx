@@ -9,25 +9,21 @@ import { fetchContacts } from "redux/operations";
 
 export default function PhoneBook() {
   const dispatch = useDispatch();
-  const {isLoading, error}=useSelector(contactsSelector);
+  const {contact, isLoading, error}=useSelector(contactsSelector);
 
   useEffect(()=>{
     dispatch(fetchContacts())
   },[dispatch])
 
-  return (<>
+  return (<div className={css.container}>
     <h1 className={css.title}> PhoneBook</h1>
     <Form  /> 
-    <div className={css.container}>
-    <h2 className={css.subtitle}>Contacts</h2>
+    <h2 className={css.title}>Contacts</h2>
     {isLoading && <p>Loading tasks...</p>}
     {error && <p>{error}</p>}
     <Filter  />
-    {/* <p>{items.length > 0 && JSON.stringify(items, null, 2)}</p> */}
-    {/* {contact.length > 0 &&  <ContactList /> } */}
-     <ContactList />
-    </div> 
-  </>)
+    {contact !== [] &&  <ContactList /> }
+    </div>)
 }
 
 

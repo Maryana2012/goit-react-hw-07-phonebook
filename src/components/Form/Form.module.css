@@ -1,20 +1,49 @@
 .form__container{
     border: 2px solid blanchedalmond;
     padding: 20px;
-    width: 250px;
     background-color: azure;
+
+
 }
 .input{
-    width: 200px;
-    margin-bottom: 5px;
-}
-.label{
     display: block;
-    width: 50px;
-        text-align:left
+    width: 300px;
+    height: 30px;
+    border: none;
+    outline: 2px solid blanchedalmond;
+    border-radius: 10px;
+    /* margin:  0 auto; */
+    font-size: 16px;
+    padding: 5px;
+}
+
+.label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.label__form{
+    font-weight: 700; 
+    width: 80px;
 }
 button {
-    border: none;
-    outline: 1px solid blanchedalmond;
+    display: flex;
+    border: 2px solid blanchedalmond;
+    border-radius: 10px;
     background-color: yellow;
+    width: 150px;
+    height: 30px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    margin:  0 auto;
+    color: blue;
+
+}
+button:hover, button:focus{
+    background-color: rgb(233, 233, 113);
+    width: 160px;
 }

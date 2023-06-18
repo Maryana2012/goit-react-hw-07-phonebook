@@ -8,9 +8,14 @@
     border: 2px solid blanchedalmond;
     padding: 20px;
     background-color: azure;
+    margin: 0 auto;
+   
 }
 .title{
     width: 250px;
-        text-align: center;
-        color: blue;
+    text-align: center;
+    color: blue;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }

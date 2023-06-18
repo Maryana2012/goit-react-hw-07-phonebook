@@ -12,5 +12,3 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       </Provider>
   </React.StrictMode>
 );
-
-// https://648b4f5917f1536d65eac5bd.mockapi.io

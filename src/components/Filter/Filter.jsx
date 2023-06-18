@@ -7,12 +7,13 @@ export default function Filter() {
     const dispatch = useDispatch();
     const handleFilter = (event)=> {dispatch(visibleContact(event.target.value))}
 
-    return( <label htmlFor="" className={css.label}>Find contact by name
+    return( <>
+            <label htmlFor="" className={css.label}>Find contact by name </label>
             <input type="text" className={css.input}
                 name="filter"
                 onChange={handleFilter}
                 />
-            </label>
+        </>   
     )
 }
 
